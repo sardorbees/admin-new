@@ -3,7 +3,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#o$sxch!@l_6#g3h1s4wq3i)v2ss!f)ac!_nb5)s1-wep=ljot'
 DEBUG = True
 ALLOWED_HOSTS = [
-    'admin-new-xp8v.onrender.com'
+    '*'
 ]
 from django.views.generic import View
 from django.http import HttpResponse
@@ -260,6 +260,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 
+CSRF_COOKIE_NAME = "csrftoken"
+CSRF_COOKIE_SAMESITE = "Lax"  
+CSRF_COOKIE_SECURE = True 
+
+CSRF_TRUSTED_ORIGINS = ["https://tash-cleaning-admin.vercel.app", "https://admin-new-xp8v.onrender.com"]
+
+CSRF_COOKIE_HTTPONLY = False
 
 CORS_ALLOW_HEADERS = [
     'authorization',
