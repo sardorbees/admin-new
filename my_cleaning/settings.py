@@ -2,7 +2,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#o$sxch!@l_6#g3h1s4wq3i)v2ss!f)ac!_nb5)s1-wep=ljot'
 DEBUG = False
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'admin-new-xp8v.onrender.com'
+]
 from django.views.generic import View
 from django.http import HttpResponse
 from django.conf import settings
@@ -253,7 +255,7 @@ SWAGGER_SETTINGS = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://admin-new-zj9v.onrender.com",
+    "https://admin-new-xp8v.onrender.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
