@@ -253,9 +253,8 @@ SWAGGER_SETTINGS = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://0.0.0.0:8000", # Для локальной разработки
+    "https://admin-new-zj9v.onrender.com",
 ]
-
 CORS_ALLOW_CREDENTIALS = True
 
 
