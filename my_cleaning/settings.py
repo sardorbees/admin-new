@@ -1,7 +1,7 @@
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#o$sxch!@l_6#g3h1s4wq3i)v2ss!f)ac!_nb5)s1-wep=ljot'
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = [
     'admin-new-xp8v.onrender.com'
 ]
@@ -256,6 +256,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://admin-new-xp8v.onrender.com",
+    'http://localhost:3000',
 ]
 CORS_ALLOW_CREDENTIALS = True
 

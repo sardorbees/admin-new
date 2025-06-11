@@ -12,6 +12,7 @@ from django.http import HttpResponse
 from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework.authtoken.models import Token
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from .views import get_csrf_token
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -54,6 +55,7 @@ schema_view = get_schema_view(
 item_id_param = openapi.Parameter('id', openapi.IN_PATH, description="ID объекта", type=openapi.TYPE_INTEGER, example=123)
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("api/get-csrf-token/", get_csrf_token),
     path('', home, name='home'),
     path("api/ckeditor5/", include('django_ckeditor_5.urls')),
     path("api/base/", include('base.urls')),
