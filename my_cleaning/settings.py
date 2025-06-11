@@ -1,7 +1,7 @@
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#o$sxch!@l_6#g3h1s4wq3i)v2ss!f)ac!_nb5)s1-wep=ljot'
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 from django.views.generic import View
 from django.http import HttpResponse
